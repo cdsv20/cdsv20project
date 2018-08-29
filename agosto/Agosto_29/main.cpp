@@ -6,20 +6,23 @@ using namespace std;
 
 int main()
 {
-    int a,b,c,suma,promedio,producto,mayor,menor;
+    int a,b,c,suma,producto,mayor,menor;
+    float promedio;
     cin >> a >> b >> c;
     suma = a + b + c;
-    promedio = (a + b + c)/3;
+    promedio = (a + b + c)/3.0;
     producto = a * b * c;
-    mayor = a;
 
-    if (b > mayor)
-        mayor = b;
+    if (a > b && b > c)
+    {
+        mayor = a;
+        menor = c
+    }
     if (c > mayor)
         mayor = c;
     cout << "suma: " << suma << endl << "promedio: " << promedio << endl << "producto: " << producto << endl;
     cout << "mayor: " << mayor << endl <</* "menor: " << menor*/;
     return 0;
 }
-// least program failed
+// least program failed:?¡?¡?¡?¡?¡?¡??¡?¡?¡
 // escribe un programa que ingres un int y determine si es par o impar
