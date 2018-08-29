@@ -16,7 +16,7 @@ int main()
     if (a > b && b > c)
     {
         mayor = a;
-        menor = c
+        menor = c;
     }
     if (c > mayor)
         mayor = c;
