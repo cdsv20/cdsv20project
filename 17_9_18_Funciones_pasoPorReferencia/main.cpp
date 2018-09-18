@@ -29,8 +29,7 @@ int factorial(int n)
 {
     if (n == 0 || n == 1)
         return 1;
-    else
-        return n * factorial(n-1);
+    return n * factorial(n-1);
 }
 
 int forfactorial(int n)
@@ -47,7 +46,7 @@ int main()
     int x = 5, y = 6;
     //cout << x << " " << y << endl;
     intercambio(x,y);
-    //cout << isPotencia2(1024);
+    cout << isPotencia2(2048) << endl;
     cout << factorial(6) << endl;
     cout << forfactorial(6) << endl;
     //cout << x << " " << y << endl;
