@@ -47,7 +47,7 @@ int main()
     //cout << x << " " << y << endl;
     intercambio(x,y);
     cout << isPotencia2(2048) << endl;
-    cout << factorial(6) << endl;
+    cout << factorial(5) << endl;
     cout << forfactorial(6) << endl;
     //cout << x << " " << y << endl;
     //cout << z;
