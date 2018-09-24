@@ -7,10 +7,8 @@ int primero()
 {
     int suma = 0;
     for (int i = 999;i > 0;i--)
-    {
         if (i % 3 == 0 || i % 5 == 0)
             suma += i;
-    }
     return suma;
 }
 
@@ -31,23 +29,13 @@ int segundo(int n)
 long tercero(long n)
 {
     long i = 2,res = 0;
-    int esPrimo;
     while (i <= n)
     {
         if (n % i == 0)
         {
             while(n % i == 0)
                 n /= i;
-            esPrimo = 1;
-            for (long j = 2; j < i/2+1; j++) {
-                if (i % j == 0) {
-                    esPrimo = 0;
-                    break;
-                }
-            }
-            if (esPrimo) {
-                res = i;
-            }
+            res = i;
         }
         i++;
     }
@@ -57,11 +45,12 @@ long tercero(long n)
 long cuarto()
 {
     long res = 0,p,p1,p2;
-    for (long i = 100;i <= 999;i++)
+    for (long i = 100;i < 1000;i++)
     {
-        for (long j = 100;j <= 999;j++)
+        for (long j = 100;j < 1000;j++)
         {
             p = j*i;
+            //verificar_palindrome
             p1 = p;
             p2 = 0;
             while(p1 > 0)
@@ -70,14 +59,9 @@ long cuarto()
                 p1 /= 10;
             }
             if (p == p2)
-            {
-                //cout << i << "-" <<j << "--->" << p << " " << p2 <<endl;
-                if ( p>res)
+                if (p > res)
                     res = p;
-            }
-
         }
-
     }
     return res;
 }
@@ -116,17 +100,14 @@ long septimo()
     while(cont <= 10001)
     {
         int esPrimo = 1;
-        for (long j = 2; j < p/2+1; j++)
-        {
+        for (long j = 2; j < p/2+1;j++)
             if (p % j == 0)
             {
                 esPrimo = 0;
                 break;
             }
-        }
-        if (esPrimo) {
+        if (esPrimo)
             cont++;
-        }
         p++;
     }
     return p - 1;
