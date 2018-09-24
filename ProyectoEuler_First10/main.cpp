@@ -170,22 +170,7 @@ int noveno()
     return -1;
 }
 
-long decimo(long n)
-{
-	long sum = 2;
-	for(long i=3; i<n; i+=2) {
-		if (i%2!=0) {
-			int isPrime = 1;
-			for (long c=3; c<i && isPrime; c += 2) {
-				isPrime = ( i % c != 0);
-			}
-			if (isPrime) { sum += i; }
-		}
-	}
-	return sum;
-}
-
-unsigned long decimo2()
+unsigned long decimo()
 {
     unsigned long res = 0;
     vector<int> primos;
@@ -221,6 +206,6 @@ int main()
     cout << septimo() << endl;
     cout << octavo() << endl;
     cout << noveno() << endl;
-    cout << decimo2() << endl;
+    cout << decimo() << endl;
     return 0;
 }
