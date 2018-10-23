@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1540287867 source:/home/ucsp/cdgit/cdsv20project/class_sec_try/main.cpp
+	<iostream>
+	"Point.h"
+
+1540287380 /home/ucsp/cdgit/cdsv20project/class_sec_try/include/Point.h
+
+1540286862 source:/home/ucsp/cdgit/cdsv20project/class_sec_try/src/Point.cpp
+	"Point.h"
+	<iostream>
+

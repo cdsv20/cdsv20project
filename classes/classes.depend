@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1540284802 source:/home/ucsp/cdgit/cdsv20project/classes/main.cpp
+	<iostream>
+	"pointer.h"
+
+1540284775 /home/ucsp/cdgit/cdsv20project/classes/include/pointer.h
+
